@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hour-Tash Laboratory | Advanced Analysis Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Vazirmatn', 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .font-inter {
+         font-family: 'Inter', sans-serif;
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      /* Prose styles for markdown rendering with light theme */
+      .prose h3 {
+        color: #1e293b; /* slate-800 */
+        border-bottom: 1px solid #e2e8f0; /* slate-200 */
+        padding-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .prose ul {
+        list-style-position: inside;
+        padding-left: 0;
+      }
+      .prose li {
+        margin-bottom: 0.5rem;
+      }
+      .prose li::marker {
+        color: #3065b5; /* corp-blue-dark */
+        font-weight: bold;
+      }
+      .prose p {
+        color: #334155; /* slate-700 */
+      }
+      .prose strong {
+        color: #0f172a; /* slate-900 */
+      }
+      .prose a {
+        color: #0392ce; /* corp-blue */
+        text-decoration: none;
+      }
+      .prose a:hover {
+        text-decoration: underline;
+      }
+    </style>
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'Inter', 'sans-serif'],
+            },
+            colors: {
+              'corp-blue': {
+                dark: '#3065b5',
+                DEFAULT: '#0392ce',
+                light: '#3eb8d7'
+              },
+              slate: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
+              }
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "marked": "https://aistudiocdn.com/marked@^14.0.0",
+    "html-to-docx": "https://aistudiocdn.com/html-to-docx@^1.8.0",
+    "mammoth": "https://aistudiocdn.com/mammoth@^1.7.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
